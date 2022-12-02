@@ -1,0 +1,7 @@
+/node_modules
+package.json
+package-lock.json
+.vscode/settings.json
+deno.d.ts
+.deno_dir
+*.zip
