@@ -42,14 +42,12 @@ export async function handler(
     headers: requestHeaders,
   });
 
-  const responseContentType = response.headers.get("content-type");
   const responseBody = await response.text();
+  const responseHeaders = Object.fromEntries(response.headers.entries())
 
   return {
     statusCode: response.status,
     body: responseBody,
-    headers: responseContentType
-      ? { "content-type": responseContentType }
-      : undefined,
+    headers: responseHeaders,
   };
 }
