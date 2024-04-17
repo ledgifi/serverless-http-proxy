@@ -1,6 +1,6 @@
 # Serverless HTTP Proxy
 
-> Krypto Ledgers SpA
+> LedgiFi LLC
 
 A Deno AWS Lambda serverless HTTP proxy
 
