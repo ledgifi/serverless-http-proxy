@@ -1,6 +1,6 @@
 {
-  "version": "2",
+  "version": "3",
   "remote": {
-    "https://deno.land/x/lambda@1.31.3/mod.ts": "315b66c882a4b502bcd2ccdbfdf72892cb657378f6af0c78f8460c94946f7d5c"
+    "https://deno.land/x/lambda@1.42.4/mod.ts": "315b66c882a4b502bcd2ccdbfdf72892cb657378f6af0c78f8460c94946f7d5c"
   }
 }
