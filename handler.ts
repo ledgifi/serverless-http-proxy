@@ -9,7 +9,7 @@ export async function handler(
   const proxy = event.pathParameters?.proxy;
   const method = event.requestContext.http.method;
   const headers = event.headers;
-  const params = event.queryStringParameters;
+  const queryString = event.rawQueryString;
   const body = event.body;
 
   if (!proxy) {
@@ -20,12 +20,7 @@ export async function handler(
   }
 
   const url = new URL(proxy);
-
-  if (params) {
-    for (const [name, value] of Object.entries(params)) {
-      if (value) url.searchParams.set(name, value);
-    }
-  }
+  url.search = queryString;
 
   const requestHeaders = new Headers();
 
